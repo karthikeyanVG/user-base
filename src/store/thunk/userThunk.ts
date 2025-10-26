@@ -46,7 +46,7 @@ export const createUser = (userData: Omit<User, 'id'>) => {
       dispatch(createUserStart());
       
       const token = getState().auth.token;
-      const response = await axios.post('https://reqres.in/api/users', userData, {
+       await axios.post('https://reqres.in/api/users', userData, {
         headers: token ? { Authorization: `Bearer ${token}`, "x-api-key": "reqres-free-v1"  } : {},
       });
 
