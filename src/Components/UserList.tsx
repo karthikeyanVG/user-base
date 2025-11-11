@@ -71,7 +71,7 @@ const UsersList: React.FC = () => {
   };
 
   const handleModalSuccess = () => {
-    dispatch(fetchUsers(currentPage, 5)); // Refresh the list
+    // dispatch(fetchUsers(currentPage, 5)); // Refresh the list
   };
 
   const handlePageChange = (page: number) => {
