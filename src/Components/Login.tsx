@@ -19,7 +19,7 @@ const Login: React.FC = () => {
     const onFinish = async (values: LoginFormValues) => {
         try {
             await dispatch(login(values.email, values.password));
-            message.success('Login successful!');
+            message.success('Login successfull!');
             navigate('/users');
         } catch (error: any) {
             message.error(error.message || 'Login failed!');
